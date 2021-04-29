@@ -11,3 +11,5 @@ spring:
     url: "jdbc:postgresql://localhost:5432/warrantier"
     username: warrantier
     password: warrantierSecret321.
+upstream:
+  neplatneDokladyUri: https://aplikace.mvcr.cz/neplatne-doklady/ViewFile.aspx
