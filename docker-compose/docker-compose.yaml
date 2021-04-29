@@ -1,0 +1,17 @@
+version: "3.3"
+   
+services:
+  db:
+    image: postgres:13
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=warrantier
+      - POSTGRES_USER=warrantier
+      - POSTGRES_PASSWORD=warrantierSecret321.
+    ports:
+      - 5432:5432
+  adminer:
+    image: adminer
+    ports:
+      - 8089:8080
